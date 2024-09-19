@@ -1,0 +1,177 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Para posicionar os diamantes corretamente */
+}
+
+/* Estilos do cabeçalho */
+/* Estilos do cabeçalho */
+header {
+    background-color: #2f034d;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Ajuste da imagem do cabeçalho */
+.header-img img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Ajuste a altura conforme necessário */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    object-position: 50% 10%; /* Mostra mais a parte de cima da imagem */
+}
+
+/* Conteúdo do cabeçalho */
+.header-content h2 {
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
+    margin: 10px 0;
+}
+
+.header-content p h1 {
+    font-size: 1.2rem; /* Ajuste o tamanho da fonte conforme necessário */
+    margin: 10px 0;
+}
+
+
+/* Estilos dos botões */
+.button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos da seção principal */
+.features {
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.image-container {
+    margin-bottom: 20px;
+}
+
+.feature-image {
+    width: 100%; /* Ajusta a imagem para caber em dispositivos móveis */
+    max-width: 100%;
+    height: auto;
+}
+
+/* Seção de demonstração do robô */
+.robot-demo h2 {
+    font-size: 1.2rem; /* Reduz título para mobile */
+    margin-bottom: 15px;
+}
+
+/* Estilos dos diamantes */
+.diamonds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; /* Garante que os diamantes não interfiram na interação com outros elementos */
+    z-index: -1; /* Coloca os diamantes atrás dos outros conteúdos */
+}
+
+.diamond {
+    position: absolute;
+    width: 60px; /* Tamanho menor para os diamantes em mobile */
+    opacity: 0.6;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.icons img {
+    width: 20px;
+    margin: 5px;
+}
+
+/* Media Queries para ajustar o layout em dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+    
+    .header-content h1 {
+        font-size: 1.1rem;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        padding: 10px 18px; /* Ajusta o padding dos botões para telas menores */
+    }
+
+    .features, .robot-demo {
+        padding: 15px;
+    }
+
+    .image-container {
+        margin: 10px 0; /* Reduz o espaço entre imagem e botão */
+    }
+
+    .feature-image {
+        width: 100%; /* Garante que a imagem não ultrapasse a tela */
+        max-width: 100%;
+    }
+}
+/* Estilos da seção de cooperadores */
+.cooperadores-intro {
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.cooperadores-intro h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.cooperadores-intro p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.cooperadores-image {
+    width: 100%;
+    max-width: 400px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilos do botão na seção de cooperadores */
+.cooperadores-intro .button {
+    margin: 10px;
+}
